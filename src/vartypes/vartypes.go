@@ -18,4 +18,8 @@ func main() {
 	fmt.Println(a, "and", b)
 	// Hello and World!!
 	// fmt.Println(z)
+
+	const name, age = "Kim", 22
+	s:= fmt.Sprint(name,"is ",age, "years old");
+	fmt.Println(s);
 }
