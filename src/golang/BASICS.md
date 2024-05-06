@@ -19,3 +19,5 @@
 2. go build hello.go : 빌드 실행 > 실행파일 생성
    ./hello : 실행파일 실행
    
+# Go 표준 라이브러리 
+https://pkg.go.dev/std
