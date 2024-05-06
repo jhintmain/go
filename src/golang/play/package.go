@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"jhpark.com/go/pkg/testlib"
+	"jhpark.com/go/src/testlib" // alias 사용가능
 )
 
 func main() {
@@ -17,5 +17,7 @@ func main() {
 	fmt.Println("Hello")
 
 	// 패키지를 import 할 때, Go 컴파일러는 GOROOT 혹은 GOPATH 환경변수를 검색하는데, 표준 패키지는 GOROOT 안의 패키지에서 그리고 사용자 패키지나 3rd Party 패키지는 GOPATH/pkg 에서 패키지를 찾게 된다.
-	testlib.TestPrint()
+
+	fmt.Println(testlib.GetMusic("Adele"))
+
 }
